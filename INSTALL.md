@@ -14,6 +14,10 @@ The preferred route is WPVibe’s draft-theme workflow with its current plugin i
 
 For image assets, use the WordPress Media Library and record attachment IDs when deploying through WPVibe. The portable theme uses local optimized WebP assets for a conventional file installation. Never hotlink private Drive images or commit temporary preview tokens.
 
+The current WordPress draft is `kerry-thornhill-horizon-wpvibe-draft`. Its `config.json` records attachment IDs 50 (architecture), 51 (inquiry), and 52 (portrait). On the configured domain, the renderer turns asset image tokens into native WordPress images with accurate responsive sources. On another installation, update the media mapping or use the bundled assets. The header retains WPVibe's preview token stylesheet hook.
+
+Blocksy Companion's old-theme editor asset callbacks and inherited Customizer CSS are isolated within the new preview. No live plugin or Customizer settings were modified.
+
 The theme includes its complete default content, so the design can be previewed before importing database pages. In a WPVibe draft, `site_view=home`, `site_view=research`, and `site_view=trajectory` select known routes; the draft token is preserved on navigation. Outside the draft, this query selector is ignored.
 
 ## Editable WordPress pages
@@ -27,6 +31,8 @@ wp eval-file /absolute/path/to/this-repository/tools/import-drafts.php
 The script verifies the domain and creates new draft pages only. It preserves previously imported pages and refuses conflicting slugs. It does not activate the theme, publish pages, modify the old homepage, change settings, or execute arbitrary queries.
 
 The pages use the `_horizon_route` metadata key with values `home`, `research`, and `trajectory`. Content is ordinary HTML and can be maintained through WordPress’s code editor. `[[research]]`, `[[trajectory]]`, and `[[home]]` tokens retain preview-aware links; `[[asset:filename.webp]]` tokens resolve bundled assets. Preserve the outer `main` element and section IDs when editing. If database content is edited, export it back into `content/` before rebuilding; do not overwrite it with an older repository snapshot.
+
+The deployed draft pages are Home 53, Research 54, and Trajectory 55. Their HTML is wrapped in one Gutenberg Custom HTML block, which preserves the supplied page structure. Do not import duplicates.
 
 ## Publication
 

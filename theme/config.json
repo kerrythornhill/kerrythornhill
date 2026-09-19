@@ -6,6 +6,7 @@
   "domain": "https://kerrythornhill.com",
   "body_class": "personal-site",
   "tagline": "Researcher & systems builder",
+  "media": {"architecture": 50, "inquiry": 51, "portrait": 52},
   "pages": {
     "home": {
       "title": "Kerry Thornhill — Human judgment. Technological possibility.",

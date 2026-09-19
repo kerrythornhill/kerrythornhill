@@ -1,5 +1,9 @@
 # Changelog
 
-## 2026-09-19 — Initial draft
+## 2026-09-19
 
-Created the Horizon design, three source pages, static previews, a portable classic WordPress theme, responsive image assets, and a guarded draft-content importer. This build is a review draft and has not replaced the live website.
+- Built the three-page personal website and portable WordPress theme with supplied artwork, portrait, self-hosted fonts, and responsive layouts.
+- Installed an isolated WPVibe draft and added editable draft pages and optimized Media Library images.
+- Connected native WordPress responsive images and retained WPVibe's preview hook.
+- Resolved old-theme Blocksy Companion callbacks and Customizer CSS leaking into the new preview without changing the live plugin or settings.
+- Reviewed desktop and phone layouts. The existing public site remains on Blocksy; publication is pending explicit approval and a verified complete backup.

@@ -20,7 +20,7 @@ Open `review.html` for a self-contained review with page and viewport controls. 
 
 ## Status
 
-Draft. This repository does not automatically deploy. The existing live WordPress website has not been replaced.
+Installed as an isolated WPVibe draft on September 19, 2026. Home, Research, and Trajectory are editable WordPress drafts (page IDs 53, 54, and 55). The existing live WordPress website has not been replaced. This repository does not automatically deploy.
 
 See [INSTALL.md](INSTALL.md) for the WordPress import and review process, and [qa/NOTES.md](qa/NOTES.md) for validation limits.
 
