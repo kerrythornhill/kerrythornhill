@@ -1,0 +1,26 @@
+{
+  "name": "Kerry Thornhill",
+  "theme": "Kerry Thornhill — Horizon",
+  "slug": "kerry-horizon",
+  "prefix": "horizon",
+  "domain": "https://kerrythornhill.com",
+  "body_class": "personal-site",
+  "tagline": "Researcher & systems builder",
+  "pages": {
+    "home": {
+      "title": "Kerry Thornhill — Human judgment. Technological possibility.",
+      "label": "Home",
+      "description": "Kerry Thornhill connects practical systems experience with interdisciplinary research on human–AI judgment, contestability, and human agency."
+    },
+    "research": {
+      "title": "Research — Kerry Thornhill",
+      "label": "Research",
+      "description": "Developing research on meaningful challenge, independent judgment around AI, and institutional answerability."
+    },
+    "trajectory": {
+      "title": "Trajectory — Kerry Thornhill",
+      "label": "Trajectory",
+      "description": "The experience behind the questions: leadership, systems building, interdisciplinary study, and a developing research career."
+    }
+  }
+}

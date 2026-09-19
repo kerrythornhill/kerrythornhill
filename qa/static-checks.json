@@ -1,0 +1,32 @@
+[
+  {
+    "page": "research.html",
+    "h1": 1,
+    "main": 1,
+    "title": "Research \u2014 Kerry Thornhill",
+    "broken_local_links": [],
+    "images_without_alt": [],
+    "unresolved_tokens": false,
+    "noindex": true
+  },
+  {
+    "page": "trajectory.html",
+    "h1": 1,
+    "main": 1,
+    "title": "Trajectory \u2014 Kerry Thornhill",
+    "broken_local_links": [],
+    "images_without_alt": [],
+    "unresolved_tokens": false,
+    "noindex": true
+  },
+  {
+    "page": "index.html",
+    "h1": 1,
+    "main": 1,
+    "title": "Kerry Thornhill \u2014 Human judgment. Technological possibility.",
+    "broken_local_links": [],
+    "images_without_alt": [],
+    "unresolved_tokens": false,
+    "noindex": true
+  }
+]

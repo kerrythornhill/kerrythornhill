@@ -1,0 +1,41 @@
+# WordPress installation and maintenance
+
+Target: https://kerrythornhill.com only.
+
+## Before installation
+
+Take a complete database and files backup. On the Droplet, the owner’s handoff additionally calls for a database export outside the web root before site changes. Preserve the active theme, existing homepage, existing About page, menus, and site options.
+
+The current site uses Blocksy and Stackable. Existing builder content must not be replaced by an unreviewed bulk update. This theme provides ordinary fallback templates for existing pages, but their visual compatibility requires review before activation.
+
+## Draft preview
+
+The preferred route is WPVibe’s draft-theme workflow with its current plugin installed and activated. Create a new draft named **Kerry Thornhill — Horizon**, read the scaffold, and adapt it with these theme sources. Preserve the WPVibe draft preview hook if a hybrid scaffold is used. The shipped source itself uses ordinary CSS and does not require Tailwind.
+
+For image assets, use the WordPress Media Library and record attachment IDs when deploying through WPVibe. The portable theme uses local optimized WebP assets for a conventional file installation. Never hotlink private Drive images or commit temporary preview tokens.
+
+The theme includes its complete default content, so the design can be previewed before importing database pages. In a WPVibe draft, `site_view=home`, `site_view=research`, and `site_view=trajectory` select known routes; the draft token is preserved on navigation. Outside the draft, this query selector is ignored.
+
+## Editable WordPress pages
+
+After the backup, run the optional importer from the target WordPress installation:
+
+```sh
+wp eval-file /absolute/path/to/this-repository/tools/import-drafts.php
+```
+
+The script verifies the domain and creates new draft pages only. It preserves previously imported pages and refuses conflicting slugs. It does not activate the theme, publish pages, modify the old homepage, change settings, or execute arbitrary queries.
+
+The pages use the `_horizon_route` metadata key with values `home`, `research`, and `trajectory`. Content is ordinary HTML and can be maintained through WordPress’s code editor. `[[research]]`, `[[trajectory]]`, and `[[home]]` tokens retain preview-aware links; `[[asset:filename.webp]]` tokens resolve bundled assets. Preserve the outer `main` element and section IDs when editing. If database content is edited, export it back into `content/` before rebuilding; do not overwrite it with an older repository snapshot.
+
+## Publication
+
+Review all three pages at desktop and phone widths, verify the current complete backup, and obtain explicit publication approval. Then publish the imported pages, activate the reviewed theme using the relevant host/plugin workflow, and assign the imported Home page as the static homepage. Preserve the old homepage as an archived draft only after confirming the replacement is working. Do not remove the existing About page without a separate decision.
+
+Confirm stable `/research/` and `/trajectory/` routes, metadata and canonical URLs, the email link, images, 404 page, and removal of preview noindex. Review existing plugin CSS, security controls, and caching in the actual host environment. Related-project links point to public domains; coordinate launch with the Contestability and DG Humana sites.
+
+No server configuration, DNS, security settings, credentials, or other domains should be changed by this installation.
+
+## Routine edits
+
+Edit `content/*.html`, then run `python tools/build.py` to update the static preview and bundled theme fallbacks. Styles live in `theme/assets/site.css`; page titles and descriptions live in `theme/config.json`. Font licenses are included in `theme/assets/fonts/`. The design requires no client-side JavaScript and adds no analytics or submission form.
