@@ -2,11 +2,17 @@
 
 Target: https://kerrythornhill.com only.
 
+## Current installation — September 19, 2026
+
+The approved website is live. The active theme is `kerry-thornhill-horizon`; Home 53, Research 54, and Trajectory 55 are published. The static homepage is page 53. The owner confirmed completion of a DigitalOcean snapshot before publication. The previous theme remains installed. Former homepage 6 is preserved as a draft; the existing About page remains published.
+
+The instructions below describe a fresh installation or future review cycle. Do not reimport existing pages or treat the original draft theme as the current active theme.
+
 ## Before installation
 
 Take a complete database and files backup. On the Droplet, the owner’s handoff additionally calls for a database export outside the web root before site changes. Preserve the active theme, existing homepage, existing About page, menus, and site options.
 
-The current site uses Blocksy and Stackable. Existing builder content must not be replaced by an unreviewed bulk update. This theme provides ordinary fallback templates for existing pages, but their visual compatibility requires review before activation.
+Before this launch, the site used Blocksy and Stackable. Existing builder content must not be replaced by an unreviewed bulk update. This theme provides ordinary fallback templates for existing pages, but their visual compatibility requires review before activation.
 
 ## Draft preview
 
@@ -14,7 +20,7 @@ The preferred route is WPVibe’s draft-theme workflow with its current plugin i
 
 For image assets, use the WordPress Media Library and record attachment IDs when deploying through WPVibe. The portable theme uses local optimized WebP assets for a conventional file installation. Never hotlink private Drive images or commit temporary preview tokens.
 
-The current WordPress draft is `kerry-thornhill-horizon-wpvibe-draft`. Its `config.json` records attachment IDs 50 (architecture), 51 (inquiry), and 52 (portrait). On the configured domain, the renderer turns asset image tokens into native WordPress images with accurate responsive sources. On another installation, update the media mapping or use the bundled assets. The header retains WPVibe's preview token stylesheet hook.
+The original WordPress review draft was `kerry-thornhill-horizon-wpvibe-draft`. Its `config.json` records attachment IDs 50 (architecture), 51 (inquiry), and 52 (portrait). On the configured domain, the renderer turns asset image tokens into native WordPress images with accurate responsive sources. On another installation, update the media mapping or use the bundled assets. The header retains WPVibe's preview token stylesheet hook.
 
 Blocksy Companion's old-theme editor asset callbacks and inherited Customizer CSS are isolated within the new preview. No live plugin or Customizer settings were modified.
 
@@ -32,7 +38,7 @@ The script verifies the domain and creates new draft pages only. It preserves pr
 
 The pages use the `_horizon_route` metadata key with values `home`, `research`, and `trajectory`. Content is ordinary HTML and can be maintained through WordPress’s code editor. `[[research]]`, `[[trajectory]]`, and `[[home]]` tokens retain preview-aware links; `[[asset:filename.webp]]` tokens resolve bundled assets. Preserve the outer `main` element and section IDs when editing. If database content is edited, export it back into `content/` before rebuilding; do not overwrite it with an older repository snapshot.
 
-The deployed draft pages are Home 53, Research 54, and Trajectory 55. Their HTML is wrapped in one Gutenberg Custom HTML block, which preserves the supplied page structure. Do not import duplicates.
+The deployed pages are Home 53, Research 54, and Trajectory 55. Their HTML is wrapped in one Gutenberg Custom HTML block, which preserves the supplied page structure. Do not import duplicates.
 
 ## Publication
 

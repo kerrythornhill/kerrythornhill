@@ -1,4 +1,4 @@
-# Draft verification
+# Verification notes
 
 - All three static pages have one H1, one main landmark, distinct titles, and preview noindex.
 - Local page links, section anchors, images, and stylesheet paths resolve.
@@ -17,6 +17,14 @@
 - A Blocksy Companion editor enqueue callback required functions from the old theme. The new theme removes only those incompatible editor callbacks from its own frontend request. The plugin remains active for the live site.
 - The preview also excludes Customizer CSS inherited from the old theme. No saved Customizer settings were changed.
 
-This is a browser and functional review, not a complete accessibility audit. Existing legacy builder pages, publication settings, and post-activation behavior still require review before launch. A recent complete database and files backup has not been verified; obtain it before publication.
+This is a browser and functional review, not a complete accessibility audit. The preview observations above describe the prelaunch state; the launch record below supersedes their publication status.
 
-New draft pages and media attachments were added. Existing published content, the active theme, and DNS were not changed.
+## Public launch verification — September 19, 2026
+
+- Owner approved publication and confirmed completion of a DigitalOcean snapshot before launch.
+- Published `kerry-thornhill-horizon` and native pages 53–55; page 53 is the static front page. Previous theme files remain installed, and former homepage 6 is preserved as a draft. Existing About page 2 remains published.
+- Opened the public homepage, Research, and Trajectory without preview parameters. Each showed the intended content, one H1 and main landmark, and a correct canonical URL. Research and Trajectory images loaded successfully.
+- Confirmed intended typography and the public Research layout visually. Contact email and X profile links match the owner's supplied details.
+- WordPress `blog_public` is enabled. Public pages have no preview noindex directive or preview banner. This permits indexing; it does not establish search-engine inclusion.
+- Phone and tablet coverage is documented in the preceding preview review; this launch check used the same approved styles on public desktop routes.
+
