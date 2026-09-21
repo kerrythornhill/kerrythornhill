@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://kerrythornhill.com/",
+    "brokenAnchors": [],
+    "canonical": "https://kerrythornhill.com/",
+    "college": true,
+    "h1": 1,
+    "main": 1,
+    "oldTerms": false,
+    "overflow": false,
+    "preview": false,
+    "robots": "max-image-preview:large",
+    "title": "Kerry Thornhill — Information Science & Human–AI Decision Making",
+    "tokens": false
+  },
+  {
+    "url": "https://kerrythornhill.com/research/",
+    "brokenAnchors": [],
+    "canonical": "https://kerrythornhill.com/research/",
+    "college": true,
+    "h1": 1,
+    "main": 1,
+    "oldTerms": false,
+    "overflow": false,
+    "preview": false,
+    "robots": "max-image-preview:large",
+    "title": "Research — Kerry Thornhill",
+    "tokens": false
+  },
+  {
+    "url": "https://kerrythornhill.com/trajectory/",
+    "brokenAnchors": [],
+    "canonical": "https://kerrythornhill.com/trajectory/",
+    "college": true,
+    "h1": 1,
+    "main": 1,
+    "oldTerms": false,
+    "overflow": false,
+    "preview": false,
+    "robots": "max-image-preview:large",
+    "title": "Academic and Professional Background — Kerry Thornhill",
+    "tokens": false
+  }
+]

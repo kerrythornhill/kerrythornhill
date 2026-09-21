@@ -13,3 +13,13 @@ Published after explicit owner approval and owner confirmation of a completed Di
 - Connected native WordPress responsive images and retained WPVibe's preview hook.
 - Resolved old-theme Blocksy Companion callbacks and Customizer CSS leaking into the new preview without changing the live plugin or settings.
 - Reviewed desktop and phone layouts. The existing public site remains on Blocksy; publication is pending explicit approval and a verified complete backup.
+
+## 2026-09-21
+
+- Published the revised Home, Research, and Trajectory pages and shared navigation/footer.
+- Corrected current graduate degree to MS in Interdisciplinary Studies, in progress; added the complete UNT college affiliation and Information Science research focus.
+- Expanded the professional trajectory and distinguished current public materials from planned contributions.
+- Replaced homepage/research artwork using supplied Machine Room images; retained portrait.
+- Updated search and social descriptions, site tagline, work links, and phone layout.
+- Removed DG Humana from the personal site's active narrative and footer; archived legacy About page 2 and permanently redirected its URL to Trajectory.
+- Preserved native revisions and the prior active theme. Final research résumé/preprint links await supplied release files.

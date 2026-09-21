@@ -28,3 +28,12 @@ This is a browser and functional review, not a complete accessibility audit. The
 - WordPress `blog_public` is enabled. Public pages have no preview noindex directive or preview banner. This permits indexing; it does not establish search-engine inclusion.
 - Phone and tablet coverage is documented in the preceding preview review; this launch check used the same approved styles on public desktop routes.
 
+## September 21 release verification
+
+- Compared live native content and theme files with the prior release before editing. Native revisions retain the old page text; page 2 remains recoverable as a draft. WPVibe backed up the active theme on publication.
+- Reviewed Home, Research, and Trajectory on desktop and representative 320/390px phone frames. The full college name remains readable; measured phone content does not overflow its viewport.
+- All three public routes have one H1/main, correct canonical URLs, complete affiliation, no unresolved tokens, no preview banner/noindex, and no broken in-page anchors. See `2026-09-21-live-checks.json`.
+- Confirmed `/sample-page/` navigates to the current Trajectory. The PHP redirect uses status 301. The old page is no longer published.
+- Reviewed new images and the retained portrait, contact and X links, research cross-links, and academic-status wording. No incorrect MA, CompTIA, DG Humana, or old performance percentage remains in the inspected active pages.
+- Uploaded PHP files passed WPVibe syntax validation. `2026-09-21-home.jpg` records the public homepage.
+- This was a browser/layout review, not a formal accessibility audit or a native-device/printed-PDF certification. No final résumé or preprint file was supplied for this release.

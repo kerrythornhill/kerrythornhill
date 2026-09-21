@@ -4,7 +4,7 @@ A personal research website connecting practical experience, interdisciplinary i
 
 ## Pages
 
-- Home: human judgment and technological possibility.
+- Home: Information Science, evidence use, human–AI judgment, and current UNT affiliation.
 - Research: meaningful challenge, independent evidence around AI, relational answerability, and the work ahead.
 - Trajectory: leadership, infrastructure, operational experience, and graduate study.
 
@@ -16,7 +16,7 @@ Build locally with Python 3:
 python tools/build.py
 ```
 
-Open `review.html` for a self-contained review with page and viewport controls. It embeds the selected artwork and fonts and needs no server. Alternatively, open `preview/index.html` or serve the repository with a local static HTTP server. No npm installation or JavaScript framework is required. The production website itself does not require JavaScript; only the standalone review controls use it.
+Open `preview/index.html` or serve the repository with a local static HTTP server. No npm installation or JavaScript framework is required. The production website itself does not require JavaScript.
 
 ## Status
 
@@ -26,6 +26,10 @@ See [INSTALL.md](INSTALL.md) for the WordPress import and review process, and [q
 
 ## Design
 
-Warm paper, deep navy, copper-orange, and luminous architectural imagery. IBM Plex Sans Condensed headings, IBM Plex Serif reading text, and IBM Plex Mono labels are self-hosted. The accompanying OFL files cover the font assets.
+Warm paper, deep navy, copper-orange, and conceptual Machine Room imagery. IBM Plex Sans Condensed headings, IBM Plex Serif reading text, and IBM Plex Mono labels are self-hosted. The accompanying OFL files cover the font assets.
 
 Theme code is GPL-2.0-or-later. Text, portrait, and supplied artwork are not included in that code license; see [ASSETS.md](ASSETS.md).
+
+## September 21 update
+
+Current MS study and the full UNT college affiliation now appear prominently, with Information Science as the research field. Home, Research, and Trajectory share the updated professional-to-academic narrative. The legacy `/sample-page/` redirects permanently to `/trajectory/`; its original content remains in draft page 2. New conceptual illustrations use native Media Library attachments 60 and 61. The supplied portrait is retained. Final research résumé and preprint links remain pending their actual files. Source and release checks are recorded in this repository.

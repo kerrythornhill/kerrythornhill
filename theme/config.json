@@ -5,23 +5,29 @@
   "prefix": "horizon",
   "domain": "https://kerrythornhill.com",
   "body_class": "personal-site",
-  "tagline": "Researcher & systems builder",
-  "media": {"architecture": 50, "inquiry": 51, "portrait": 52},
+  "tagline": "Information Science researcher",
+  "media": {
+    "architecture": 50,
+    "inquiry": 51,
+    "portrait": 52,
+    "evidence": 60,
+    "machineroom": 61
+  },
   "pages": {
     "home": {
-      "title": "Kerry Thornhill — Human judgment. Technological possibility.",
+      "title": "Kerry Thornhill — Information Science & Human–AI Decision Making",
       "label": "Home",
-      "description": "Kerry Thornhill connects practical systems experience with interdisciplinary research on human–AI judgment, contestability, and human agency."
+      "description": "Kerry Thornhill is an MS student at UNT researching information use, human–AI judgment, and algorithmic contestability."
     },
     "research": {
       "title": "Research — Kerry Thornhill",
       "label": "Research",
-      "description": "Developing research on meaningful challenge, independent judgment around AI, and institutional answerability."
+      "description": "Research on evidence, human judgment, and the information people need to investigate AI-supported institutional decisions."
     },
     "trajectory": {
-      "title": "Trajectory — Kerry Thornhill",
+      "title": "Academic and Professional Background — Kerry Thornhill",
       "label": "Trajectory",
-      "description": "The experience behind the questions: leadership, systems building, interdisciplinary study, and a developing research career."
+      "description": "Kerry Thornhill’s path from real estate, transportation, and information systems to graduate research at the University of North Texas."
     }
   }
 }

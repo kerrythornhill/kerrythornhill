@@ -136,3 +136,13 @@ add_filter('wp_robots', function($robots) {
 add_action('template_redirect', function() {
     if (horizon_is_draft()) { nocache_headers(); header('X-Robots-Tag: noindex, nofollow', true); }
 });
+
+// Consolidate the retired biography while preserving its recoverable page record.
+add_action('template_redirect', function() {
+    if (horizon_is_draft() || is_admin()) { return; }
+    $path = untrailingslashit(wp_parse_url(wp_unslash($_SERVER['REQUEST_URI'] ?? ''), PHP_URL_PATH) ?: '');
+    if ($path === '/sample-page' || is_page(2) || (isset($_GET['page_id']) && (string) $_GET['page_id'] === '2')) {
+        wp_safe_redirect(home_url('/trajectory/'), 301, 'Kerry Thornhill');
+        exit;
+    }
+}, 1);
